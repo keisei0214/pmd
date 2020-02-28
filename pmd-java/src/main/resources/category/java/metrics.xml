@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<ruleset name="Metrics"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    <description>
+        Rules that help you discover metrics issues.
+    </description>
+    <rule name="CYCLO"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.CycloMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#cyclomatic-complexity-cyclo">
+    </rule>
+</ruleset>
