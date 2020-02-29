@@ -67,4 +67,10 @@
           class="net.sourceforge.pmd.lang.java.rule.metrics.WmcMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#weighted-method-count-wmc">
     </rule>
+    <rule name="WOC"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.WocMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#weight-of-class-woc">
+    </rule>
 </ruleset>
