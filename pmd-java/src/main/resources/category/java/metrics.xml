@@ -13,4 +13,10 @@
           class="net.sourceforge.pmd.lang.java.rule.metrics.CycloMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#cyclomatic-complexity-cyclo">
     </rule>
+    <rule name="ATFD"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.AtfdMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#cyclomatic-complexity-cyclo">
+    </rule>
 </ruleset>
