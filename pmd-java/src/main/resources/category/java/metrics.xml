@@ -37,4 +37,10 @@
           class="net.sourceforge.pmd.lang.java.rule.metrics.NcssMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#non-commenting-source-statements-ncss">
     </rule>
+    <rule name="NOAM"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.NoamMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#number-of-accessor-methods-noam">
+    </rule>
 </ruleset>
