@@ -25,4 +25,10 @@
           class="net.sourceforge.pmd.lang.java.rule.metrics.ClassFanOutMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#class-fan-out-complexity-class_fan_out">
     </rule>
+    <rule name="LOC"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.LocMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#lines-of-code-loc">
+    </rule>
 </ruleset>
