@@ -43,4 +43,10 @@
           class="net.sourceforge.pmd.lang.java.rule.metrics.NoamMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#number-of-accessor-methods-noam">
     </rule>
+    <rule name="NOPA"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.NopaMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#number-of-public-attributes-nopa">
+    </rule>
 </ruleset>
