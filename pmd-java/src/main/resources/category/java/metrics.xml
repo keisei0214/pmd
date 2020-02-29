@@ -11,12 +11,18 @@
           message="{0}:{1}:{2}"
           since="6.21.0"
           class="net.sourceforge.pmd.lang.java.rule.metrics.CycloMetricRule"
-          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#cyclomatic-complexity-cyclo">
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#access-to-foreign-data-atfd">
     </rule>
     <rule name="ATFD"
           message="{0}:{1}:{2}"
           since="6.21.0"
           class="net.sourceforge.pmd.lang.java.rule.metrics.AtfdMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#cyclomatic-complexity-cyclo">
+    </rule>
+    <rule name="CLASS_FAN_OUT"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.ClassFanOutMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#class-fan-out-complexity-class_fan_out">
     </rule>
 </ruleset>
