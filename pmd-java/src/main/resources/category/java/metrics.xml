@@ -61,4 +61,10 @@
           class="net.sourceforge.pmd.lang.java.rule.metrics.TccMetricRule"
           externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#tight-class-cohesion-tcc">
     </rule>
+    <rule name="WMC"
+          message="{0}:{1}:{2}"
+          since="6.21.0"
+          class="net.sourceforge.pmd.lang.java.rule.metrics.WmcMetricRule"
+          externalInfoUrl="${pmd.website.baseurl}/pmd_java_metrics_index.html#weighted-method-count-wmc">
+    </rule>
 </ruleset>
