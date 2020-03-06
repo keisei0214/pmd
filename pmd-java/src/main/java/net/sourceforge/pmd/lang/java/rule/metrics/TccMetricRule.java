@@ -17,7 +17,8 @@ public class TccMetricRule extends AbstractJavaMetricsRule {
         super.visit(node, data);
 
         if (JavaClassMetricKey.TCC.supports(node)) {
-            int tcc = (int) JavaMetrics.get(JavaClassMetricKey.TCC, node, MetricOptions.emptyOptions());
+            double tcc = JavaMetrics.get(JavaClassMetricKey.TCC, node, MetricOptions.emptyOptions());
+
             addViolation(
                     data,
                     node,

@@ -28,7 +28,16 @@ public class TccMetric extends AbstractJavaClassMetric {
         Map<String, Set<String>> usagesByMethod = new TccAttributeAccessCollector(node).start();
 
         int numPairs = numMethodsRelatedByAttributeAccess(usagesByMethod);
+
+        if (numPairs == 0) {
+            return 0;
+        }
+
         int maxPairs = maxMethodPairs(usagesByMethod.size());
+
+        if (maxPairs == 0) {
+            return -1;
+        }
 
         return numPairs / (double) maxPairs;
     }

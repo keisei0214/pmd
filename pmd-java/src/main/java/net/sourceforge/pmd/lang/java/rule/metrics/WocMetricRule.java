@@ -17,7 +17,8 @@ public class WocMetricRule extends AbstractJavaMetricsRule {
         super.visit(node, data);
 
         if (JavaClassMetricKey.WOC.supports(node)) {
-            int woc = (int) JavaMetrics.get(JavaClassMetricKey.WOC, node, MetricOptions.emptyOptions());
+            double woc = JavaMetrics.get(JavaClassMetricKey.WOC, node, MetricOptions.emptyOptions());
+
             addViolation(
                     data,
                     node,

@@ -42,7 +42,16 @@ public class NpathMetricRule extends AbstractJavaMetricsRule {
                 MetricOptions.emptyOptions()
         );
 
-        addViolation(data, node, new Object[] { NameUtil.getKindName(node), NameUtil.getOpname(node), npath });
+        addViolation(
+            data,
+            node,
+            new Object[] {
+                NameUtil.getKindName(node),
+                NameUtil.getOpname(node),
+                npath,
+            }
+        );
+
         return data;
     }
 }

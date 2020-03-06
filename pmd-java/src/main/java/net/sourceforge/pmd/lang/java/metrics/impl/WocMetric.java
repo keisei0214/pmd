@@ -34,9 +34,17 @@ public class WocMetric extends AbstractJavaClassMetric {
 
         int functionalMethods = countMatchingOpSigs(node, mask);
 
+        if (functionalMethods == 0) {
+            return 0;
+        }
+
         mask.coverAllRoles();
 
         int totalPublicMethods = countMatchingOpSigs(node, mask);
+
+        if (totalPublicMethods == 0) {
+            return -1;
+        }
 
         return functionalMethods / (double) totalPublicMethods;
     }
